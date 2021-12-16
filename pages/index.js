@@ -8,8 +8,9 @@ import { motion } from "framer-motion"
 export default function Home() {
 
   const variants = {
-    hidden: {scale: 0.5},
-    visible: {scale: 1},
+    hidden: {y: -200, opacity: 0, rotate: 90},
+    visible: {y: 0, opacity: 1, rotate: 0},
+    transition: "ease",
   }
 
   const MotionBox = motion(Box)

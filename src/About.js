@@ -12,6 +12,7 @@ const iconLinks = {
 
 const About = () => {
 
+
   const MotionBox = motion(Box)
 
 

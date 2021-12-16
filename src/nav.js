@@ -11,6 +11,7 @@ const listItemHoverStyle = {
 
 const Nav = () => {
 
+  
   const MotionBox = motion(Box)
 
   return (
@@ -22,10 +23,10 @@ const Nav = () => {
             <Link href="/projects"><ListItem _hover={listItemHoverStyle}>Projects</ListItem></Link>
             </MotionBox>
             <MotionBox whileHover={{scale: 1.1}}>
-            <ListItem _hover={listItemHoverStyle}>About</ListItem>
+            <Link href="/about"><ListItem _hover={listItemHoverStyle}>About</ListItem></Link>
             </MotionBox>
             <MotionBox whileHover={{scale: 1.1}}>
-            <ListItem _hover={listItemHoverStyle}>Contact</ListItem>
+            <Link href="/contact"><ListItem _hover={listItemHoverStyle}>Contact</ListItem></Link>
             </MotionBox>
             <MotionBox whileHover={{scale: 1.1}}>
             <ListItem _hover={listItemHoverStyle}>CV</ListItem>
