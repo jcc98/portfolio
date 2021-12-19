@@ -1,5 +1,5 @@
 import { Flex, Text, Icon, Box} from '@chakra-ui/react'
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai"
 import { ImBlog } from "react-icons/im"
 import React from 'react'
 import { motion } from "framer-motion"
@@ -7,7 +7,8 @@ import { motion } from "framer-motion"
 const iconLinks = {
   gitHub: "https://github.com/jcc98",
   linkedIn: "https://www.linkedin.com/in/juan-ciudad-a7700a222/",
-  blog: "https://jcc98.vercel.app/"
+  blog: "https://jcc98.vercel.app/",
+  message: "mailto:juan.ciudad98@gmail.com"
 }
 
 const About = () => {
@@ -34,10 +35,17 @@ const About = () => {
         </MotionBox>
 
         <MotionBox whileHover={{scale: 1.1}}>
+          <a target="_blank" href={iconLinks.message}>
+            <Icon mr="5" as={AiOutlineMail} w={10} h={10}/>
+          </a>
+        </MotionBox>
+        
+        <MotionBox whileHover={{scale: 1.1}}>
           <a target="_blank" href={iconLinks.blog}>
             <Icon mr="5" as={ImBlog} w={10} h={10}/>
           </a>
         </MotionBox>
+
       </Flex>
     </Flex>
   )

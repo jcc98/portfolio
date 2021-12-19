@@ -29,7 +29,7 @@ const Nav = () => {
             <Link href="/contact"><ListItem _hover={listItemHoverStyle}>Contact</ListItem></Link>
             </MotionBox>
             <MotionBox whileHover={{scale: 1.1}}>
-            <ListItem _hover={listItemHoverStyle}>CV</ListItem>
+            <a target="_blank" href="https://drive.google.com/file/d/1APv6qrC64OE4Jb04OkQ26L1ozGcQ5E2y/view?usp=sharing"><ListItem _hover={listItemHoverStyle}>CV</ListItem></a>
             </MotionBox>
 
             </Flex>
