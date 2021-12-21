@@ -1,8 +1,10 @@
 import { background } from '@chakra-ui/styled-system'
 import { Box, Button, Text, Flex, Spacer } from "@chakra-ui/react"
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiNextdotjs, SiSass, SiStyledcomponents, SiChakraui } from "react-icons/si"
 import React from 'react'
 import {motion} from "framer-motion"
 import Link from "next/link"
+import { Icon } from '@chakra-ui/react'
 
 const MotionBox = motion(Box)
 const variants = {
@@ -10,6 +12,51 @@ const variants = {
   visible: {opacity: 1},
   duration: 5,
 }
+
+const icons = [
+  {
+    name: "HTML",
+    icon: SiHtml5,
+    color: "orange"
+  },
+  {
+    name: "CSS",
+    icon: SiCss3,
+    color: "blue"
+  },
+  {
+    name: "Javascript",
+    icon: SiJavascript,
+    color: "yellow"
+  },
+  {
+    name: "Typescript",
+    icon: SiTypescript,
+    color: "blue"
+  },
+  {
+    name: "NextJS",
+    icon: SiNextdotjs,
+    color: "gray"
+  },
+  {
+    name: "SASS",
+    icon: SiSass,
+    color: "pink"
+  },
+  {
+    name: "Styled Components",
+    icon: SiStyledcomponents,
+    color: "yellow"
+  },
+  {
+    name: "ChakraUI",
+    icon: SiChakraui,
+    color: "cyan"
+  }
+
+
+]
 
 const about = () => {
   return (
@@ -25,7 +72,17 @@ const about = () => {
         <Box mx={"20"} mt={"10"} shadow={"lg"} bg={"#282c38"} rounded={"base"} p={"5"} color={"#fff"}>
         <Text textShadow={"1px 1px #000"} textAlign={"center"} fontSize={"4xl"} color={"brand.primary"}>Languages</Text>
 
-          <hr></hr>
+          <hr ></hr>
+          <Flex>
+            {icons.map((icon, key) => {
+              return(
+                <MotionBox my={"3"} mx={"3"} key={key} whileHover={{scale: 1.2}}>
+                  <Icon title={icon.name} _hover={{color: icon.color}} w={"10"} h={"10"} as={icon.icon}></Icon>
+
+                </MotionBox>
+              )
+            })}
+          </Flex>
         </Box>
       </Flex>
     </MotionBox>
