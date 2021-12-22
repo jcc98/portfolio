@@ -20,11 +20,12 @@ const About = () => {
   return (
     <Flex color={"brand.third"} flexDirection={"column"}height={"100vh"} justifyContent={"center"} alignItems={"center"}>
       <Text fontSize={{base:"3xl", md:"4xl", lg:"7xl"}}>Juan Ciudad.</Text>
-      <Text fontSize={{base:"xl", md:"2xl", lg:"3xl"}}>Web Developer</Text>
+      <Text  fontSize={{base:"xl", md:"2xl", lg:"3xl"}}>Web Developer</Text>
+      <Text fontSize={{base:"m", md:"lg", lg:"2xl"}}>Contact me:</Text>
       <Flex marginTop="1.5">
         <MotionBox whileHover={{scale: 1.1}}>
             <a target="_blank" href={iconLinks.gitHub}>
-          <Icon mr="5" as={AiOutlineGithub} w={{base:4, md:6, lg:10}} h={{base:6, md:8, lg:10}}/>
+          <Icon mr="5" as={AiOutlineGithub} w={{base:6, md:6, lg:10}} h={{base:6, md:8, lg:10}}/>
           </a>
         </MotionBox>
 
@@ -47,8 +48,8 @@ const About = () => {
         </MotionBox>
 
       </Flex>
-      <Text  fontSize={"small"}>Made with NextJS & ChakraUI</Text>
-      <Text  fontSize={"xs"}>&copy; 2022 Jcc98</Text>
+      <Text my={"5"} textAlign={"center"} fontSize={"small"}>Made with NextJS, ChakraUI & Framer Motion.</Text>
+      <Text  my={"1"} textAlign={"center"} fontSize={"xs"}>&copy; 2022 Jcc98</Text>
     </Flex>
   )
 }
