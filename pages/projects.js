@@ -18,7 +18,7 @@ const variants = {
 const projects = () => {
   return (
     <MotionBox initial="hidden" animate="visible" variants={variants} height="100vh">
-      <Link rel="noreferrer" href="/"><Button display={"block"} m={0, "auto"} size={"lg"} mt={2}>Go back</Button></Link>
+      <Link passHref rel="noreferrer" href="/"><Button display={"block"} m={0, "auto"} size={"lg"} mt={2}>Go back</Button></Link>
 
       <Text textShadow={"1px 1px #000"} textAlign={"center"} fontSize={{base: "4xl", md: "6xl", lg:"8xl"}} color={"brand.primary"}>Projects</Text>
         {projectData.map((project, key) => {
