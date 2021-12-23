@@ -24,25 +24,25 @@ const About = () => {
       <Text fontSize={{base:"m", md:"lg", lg:"2xl"}}>Contact me:</Text>
       <Flex marginTop="1.5">
         <MotionBox whileHover={{scale: 1.1}}>
-            <a target="_blank" href={iconLinks.gitHub}>
+            <a rel="noreferrer" target="_blank" href={iconLinks.gitHub}>
           <Icon mr="5" as={AiOutlineGithub} w={{base:6, md:6, lg:10}} h={{base:6, md:8, lg:10}}/>
           </a>
         </MotionBox>
 
         <MotionBox whileHover={{scale: 1.1}}>
-          <a target="_blank" href={iconLinks.linkedIn}>
+          <a rel="noreferrer" target="_blank" href={iconLinks.linkedIn}>
             <Icon mr="5" as={AiOutlineLinkedin} w={{base:6, md:8, lg:10}} h={{base:6, md:8, lg:10}}/>
           </a>
         </MotionBox>
 
         <MotionBox whileHover={{scale: 1.1}}>
-          <a target="_blank" href={iconLinks.message}>
+          <a rel="noreferrer" target="_blank" href={iconLinks.message}>
             <Icon mr="5" as={AiOutlineMail} w={{base:6, md:8, lg:10}} h={{base:6, md:8, lg:10}}/>
           </a>
         </MotionBox>
         
         <MotionBox whileHover={{scale: 1.1}}>
-          <a target="_blank" href={iconLinks.blog}>
+          <a rel="noreferrer" target="_blank" href={iconLinks.blog}>
             <Icon mr="5" as={ImBlog} w={{base:6, md:8, lg:10}} h={{base:6, md:8, lg:10}}/>
           </a>
         </MotionBox>

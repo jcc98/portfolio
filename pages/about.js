@@ -66,7 +66,7 @@ const icons = [
 const about = () => {
   return (
     <MotionBox initial="hidden" animate="visible" variants={variants} bg="brand.third" height="100vh">
-      <Link href="/"><Button display={"block"} m={0, "auto"} size={"lg"} mt={2}>Go back</Button></Link>
+      <Link href="/" passHref><Button display={"block"} m={0, "auto"} size={"lg"} mt={2}>Go back</Button></Link>
       <Flex flexDirection={"column"} height={"95vh"} justifyContent={"center"} alignItems={"center"} >
         <Box mx={{base:"4", md:"10", lg:"20"}} shadow={"lg"} bg={"#282c38"} rounded={"base"} p={"5"} color={"#fff"}>
         <Text textShadow={"1px 1px #000"} textAlign={"center"} fontSize={{base:"xl", md:"2xl",lg:"4xl"}} color={"brand.primary"} mb={"5"}>About</Text>
