@@ -34,7 +34,7 @@ const projects = () => {
                             </Text>
                             <hr width={"10%"}></hr>
                             <Text fontWeight={"bold"} fontSize={"small"}>{project.techUsed}</Text>
-                            <MotionBox whileHover={{y: 5}}><a target="_blank" href={project.github}><Icon as={AiFillGithub} w={{base:"7", md:"8", lg:"10"}} h={10}>Source</Icon></a></MotionBox>
+                            <MotionBox whileHover={{y: 5}}><a rel="noreferrer" target="_blank" href={project.github}><Icon as={AiFillGithub} w={{base:"7", md:"8", lg:"10"}} h={10}>Source</Icon></a></MotionBox>
                       </Flex>
                     </Box>
                 <Box width="30vw" rounded="base" p={2}>
