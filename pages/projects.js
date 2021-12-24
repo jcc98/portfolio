@@ -1,4 +1,5 @@
 import { background } from '@chakra-ui/styled-system'
+import { useState } from "react"
 import { Button, Box, Flex, Spacer, Text, Container, Icon } from "@chakra-ui/react"
 import { AiFillGithub } from 'react-icons/ai'
 import React from 'react'
@@ -16,6 +17,9 @@ const variants = {
 }
 
 const projects = () => {
+
+  const [imgClickStatus, setImgClickStatus] = useState(false)
+
   return (
     <MotionBox initial="hidden" animate="visible" variants={variants} height="100vh">
       <Link passHref rel="noreferrer" href="/"><Button display={"block"} m={0, "auto"} size={"lg"} mt={2}>Go back</Button></Link>
@@ -38,7 +42,8 @@ const projects = () => {
                       </Flex>
                     </Box>
                 <Box width="30vw" rounded="base" p={2}>
-                    <Image alt={`${project.name} Image`} width={"1000px"} height={"700px"} objectFit={'contain'}  src={project.image}></Image>
+                    <MotionBox whileHover={{scale: 1.7}} ><Image onClick={() => setImgClickStatus(!imgClickStatus)} alt={`${project.name} Image`} width={"1000px"} height={"700px"} objectFit={'contain'}  src={project.image}></Image><Text fontSize={"sm"} textAlign={"center"}><Text display={{base: "none", md: "block", lg:"block"}}>Hover me</Text></Text></MotionBox>
+                    
                 </Box>
                </Flex>
               </a>
