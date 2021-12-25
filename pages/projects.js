@@ -1,6 +1,4 @@
-import { background } from '@chakra-ui/styled-system'
-import { useState } from "react"
-import { Button, Box, Flex, Spacer, Text, Container, Icon } from "@chakra-ui/react"
+import { Button, Box, Flex,Text, Icon } from "@chakra-ui/react"
 import { AiFillGithub } from 'react-icons/ai'
 import React from 'react'
 import {motion} from "framer-motion"
@@ -17,8 +15,6 @@ const variants = {
 }
 
 const projects = () => {
-
-  const [imgClickStatus, setImgClickStatus] = useState(false)
 
   return (
     <MotionBox initial="hidden" animate="visible" variants={variants} height="100vh">
