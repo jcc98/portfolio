@@ -14,7 +14,7 @@ export const projectData = [
     techUsed: "ReactJS (Local JSON Fetch), vanilla CSS",
     image: "/images/blog.png",
     github: "https://github.com/jcc98/yoji-app",
-    website: "https://yoji-quiz-game.netlify.app"
+    website: "https://yoji-app.vercel.app/"
   },
   {
     name: "RGB Game",
