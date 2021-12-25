@@ -10,9 +10,9 @@ export const projectData = [
   },
   {
     name: "Yoji App",
-    description: "Quiz-like app made for studying for the Kanji Kentei using scraped yojijukugo (Four-character idiom) info from a dictionary-like website. One randomly chosen idiom is selected and displayed on the screen, and one randomly chosen kanji letter is taken away. You must get the correct kanji letter. You can choose it to be displayed by level (5-1) or choose all (no particular level chosen)",
-    techUsed: "ReactJS (Local JSON Fetch), vanilla CSS",
-    image: "/images/blog.png",
+    description: "Quiz-like app made for studying for the Kanji Kentei using scraped yojijukugo (Four-character idiom) info from a dictionary-like website. One randomly chosen idiom is selected and displayed on the screen, and one randomly chosen kanji letter is taken away. You must get the kanji letter taken away correct. You get a definition of the randomly chosen idiom and its hiragana reading for context. You can choose it to be displayed by level (5-1) or choose all (no particular level chosen)",
+    techUsed: "ReactJS (Local JSON Fetch), vanilla CSS, data scraped with Javascript",
+    image: "/images/yoji.png",
     github: "https://github.com/jcc98/yoji-app",
     website: "https://yoji-app.vercel.app/"
   },
