@@ -18,7 +18,7 @@ const Nav = () => {
 
       
         <UnorderedList Shadow="xl" color="brand.primary" bg="brand.third" p={2.5} styleType="none" fontSize="3xl">
-            <Flex fontSize={{base:"4xl", md:"5xl", lg:"6xl"}} height={"100vh"} width={"40vw"} justifyContent={"center"} alignItems={"center"} flexDirection={"column"}>
+            <Flex fontSize={{base:"4xl", md:"5xl", lg:"6xl"}} height={{base: "40vh", md: "100vh", lg: "100vh"}} width={{base: "100vw", md:"40vw", lg: "40vw"}} justifyContent={"center"} alignItems={"center"} flexDirection={"column"}>
             <MotionBox whileHover={{scale: 1.1}}>
             <Link passHref rel="noreferrer" href="/projects"><ListItem _hover={listItemHoverStyle}>Projects</ListItem></Link>
             </MotionBox>

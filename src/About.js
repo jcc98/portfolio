@@ -18,7 +18,7 @@ const About = () => {
 
 
   return (
-    <Flex color={"brand.third"} flexDirection={"column"}height={"100vh"} justifyContent={"center"} alignItems={"center"}>
+    <Flex color={"brand.third"} flexDirection={"column"}height={{base: "50vh", md: "100vh", lg: "100vh"}} justifyContent={"center"} alignItems={"center"}>
       <Text fontSize={{base:"3xl", md:"4xl", lg:"7xl"}}>Juan Ciudad.</Text>
       <Text  fontSize={{base:"xl", md:"2xl", lg:"3xl"}}>Web Developer</Text>
       <Text fontSize={{base:"m", md:"lg", lg:"2xl"}}>Contact me:</Text>
