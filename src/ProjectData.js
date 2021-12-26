@@ -19,7 +19,7 @@ export const projectData = [
   {
     name: "RGB Game",
     description: "A random RGB value is chosen and displayed on the screen (red, green, blue values. they range from 0 to 255). You must choose the correct color among four different choices. Three choices are randomly generated and are unrelated to the designated RGB value. It also has a time limit and a simple score system.",
-    techUsed: "VanillaJS, Materialize CSS + SCSS",
+    techUsed: "Vanilla Javascript, Materialize CSS + SCSS",
     image: "/images/rgb.png",
     github: "https://github.com/jcc98/RGB-Game",
     website: "https://rgb-game-quiz.netlify.app"
@@ -27,9 +27,32 @@ export const projectData = [
   {
     name: "Kanji Quiz Game",
     description: "Fetches Japanese words from an API. A randomly chosen kanji is displayed and you must write a word that contains it. It has a time and score system.",
-    techUsed: "Vanilla JS (API Fetch), Skeleton CSS",
+    techUsed: "Vanilla Javascript (API Fetch), Skeleton CSS",
     image: "/images/apikanjiquiz.png",
     github: "https://github.com/jcc98/Kanji-Quiz-Game",
     website: "https://kanji-quiz-game.netlify.app/"
+  },
+]
+
+export const extraProjects = [
+  {
+    name: "Number format calculator",
+    description: "Converts traditional number format to the Japanese style",
+    techUsed: "HTML, Vanilla CSS, Vanilla Javascript",
+    github: "https://github.com/jcc98/JpCalcApp",
+    website: "https://jp-calculator-app.netlify.app/"
+  },
+  {
+    name: "Pomodoro App",
+    description: "Pomodoro app with barebone features. One of my first projects.",
+    techUsed: "HTML, Vanilla CSS, Vanilla Javascript",
+    website: "https://simple-pomodoro-app.netlify.app/"
+  },
+  {
+    name: "Tic Tac Toe Game",
+    description: "Simple tic tac toe app with barebone features. Was planning on adding a vs CPU feature... My second project. ",
+    techUsed: "HTML, Vanilla CSS, Vanilla Javascript",
+    website: "https://tictactoegame-app.netlify.app/"
   }
+
 ]
