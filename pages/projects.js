@@ -54,7 +54,7 @@ const projects = () => {
               {extraProjects.map((extraProject, key) => {
                 return (
                   <MotionBox width={"300px"} key={key} cursor={"pointer"} mb={"2.5"} bg={"#282c38"} color="#fff" key={key} shadow={"lg"} rounded={"base"}  p={"5"} whileHover={{ scale: 1.02 }}>
-                      <a href={extraProject.website} target="_blank">
+                      <a href={extraProject.website} rel="noreferrer" target="_blank">
                     <Flex flexDirection={"column"} justify={"space-between"} align={"center"}>
                         <Text mb={"3"} fontSize={{base: "md", md: "lg", lg: "xl"}}>{extraProject.name}</Text>
                         <Text >{extraProject.description}</Text>
