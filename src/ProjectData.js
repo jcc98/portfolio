@@ -40,19 +40,24 @@ export const extraProjects = [
     description: "Converts traditional number format to the Japanese style",
     techUsed: "HTML, Vanilla CSS, Vanilla Javascript",
     github: "https://github.com/jcc98/JpCalcApp",
-    website: "https://jp-calculator-app.netlify.app/"
+    website: "https://jp-calculator-app.netlify.app/",
+    image: "/images/jpcalc.png"
   },
   {
     name: "Pomodoro App",
     description: "Pomodoro app with barebone features. One of my first projects.",
     techUsed: "HTML, Vanilla CSS, Vanilla Javascript",
-    website: "https://simple-pomodoro-app.netlify.app/"
+    github: "https://github.com/jcc98/Pomodoro",
+    website: "https://simple-pomodoro-app.netlify.app/",
+    image: "/images/pomodoro.png"
   },
   {
     name: "Tic Tac Toe Game",
     description: "Simple tic tac toe app with barebone features. Was planning on adding a vs CPU feature... My second project. ",
     techUsed: "HTML, Vanilla CSS, Vanilla Javascript",
-    website: "https://tictactoegame-app.netlify.app/"
+    github: "https://github.com/jcc98/Tictactoe",
+    website: "https://tictactoegame-app.netlify.app/",
+    image: "/images/tictactoe.png"
   }
 
 ]
