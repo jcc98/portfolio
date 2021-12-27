@@ -17,8 +17,8 @@ const Nav = () => {
   return (
 
       
-        <UnorderedList Shadow="xl" color="brand.primary" bg="brand.third" p={2.5} styleType="none" fontSize="3xl">
-            <Flex fontSize={{base:"4xl", md:"5xl", lg:"6xl"}} height={{base: "40vh", md: "100vh", lg: "100vh"}} width={{base: "100vw", md:"40vw", lg: "40vw"}} justifyContent={"center"} alignItems={"center"} flexDirection={"column"}>
+            <Flex fontSize={{base:"4xl", md:"5xl", lg:"6xl"}} height={{base: "40vh", md: "100vh", lg: "100vh"}} width={{base: "100vw", md:"40vw", lg: "40vw"}} justifyContent={"center"} bg="brand.third" alignItems={"center"} flexDirection={"column"}>
+        <UnorderedList Shadow="xl" color="brand.primary"  textAlign={"center"} p={2.5} styleType="none" fontSize="3xl">
             <MotionBox whileHover={{scale: 1.1}}>
             <Link passHref rel="noreferrer" href="/projects"><ListItem _hover={listItemHoverStyle}>Projects</ListItem></Link>
             </MotionBox>
@@ -29,8 +29,8 @@ const Nav = () => {
             <a rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1APv6qrC64OE4Jb04OkQ26L1ozGcQ5E2y/view?usp=sharing"><ListItem _hover={listItemHoverStyle}>CV</ListItem></a>
             </MotionBox>
 
-            </Flex>
           </UnorderedList>
+            </Flex>
         
   )
 }
