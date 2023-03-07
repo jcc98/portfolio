@@ -26,7 +26,7 @@ const Nav = () => {
             <Link passHref rel="noreferrer" href="/about"><ListItem _hover={listItemHoverStyle}>About</ListItem></Link>
             </MotionBox>
             <MotionBox whileHover={{scale: 1.1}}>
-            <a rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1APv6qrC64OE4Jb04OkQ26L1ozGcQ5E2y/view?usp=sharing"><ListItem _hover={listItemHoverStyle}>CV</ListItem></a>
+            <a rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1Ab6vg4exAxn_u9puo8C7w5dNWPr_VrMC/view?usp=share_link"><ListItem _hover={listItemHoverStyle}>CV</ListItem></a>
             </MotionBox>
 
           </UnorderedList>
